@@ -4,7 +4,10 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
-      origin: ["http://localhost:3000"], // Adjust with your frontend URL
+      origin: [
+        "http://localhost:3000",
+        "https://ayna-full-stack-assignment-websocket.vercel.app/",
+      ], // Adjust with your frontend URL
     },
   },
   "strapi::security",

@@ -8,7 +8,10 @@ module.exports = {
       // @ts-ignore
       var io = require("socket.io")(strapi.server.httpServer, {
         cors: {
-          origin: "http://localhost:3000",
+          origin: [
+            "http://localhost:3000",
+            "https://ayna-full-stack-assignment-websocket.vercel.app/",
+          ],
           methods: ["GET", "POST"],
         },
       });
